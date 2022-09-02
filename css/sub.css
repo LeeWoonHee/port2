@@ -17,8 +17,6 @@ header>.innerBox{
     display:flex;
     justify-content: space-between;
     position:relative;
-    /* margin-bottom:30px; */
-    
 }
 header{
 }
@@ -55,14 +53,11 @@ header{
     display:none;
 }
 .nav>ul>li:nth-child(9)>.sub{
-    /* text-align:left; */
     display:none;
 }
 .nav>ul>li:nth-child(9)>.sub li{
     padding-left:57%;
     z-index: 11;
-    /* width:100%; */
-    /* position:relative; */
 }
 .nav>ul>li:nth-child(9)>.sub>.leftsub{
     float:left;
@@ -70,7 +65,6 @@ header{
     margin-top:20px;
     height:35vh;
     opacity: 1;
-    /* position:absolute; */
 }
 .nav>ul>li:nth-child(9)>.leftsub>img{
    width:100%;
@@ -84,12 +78,9 @@ header{
 }
 .nav>ul>li:hover:first-child .sub{
     display:flex;
-    /* justify-content: space-between; */
-    /* opacity:1; */
 }
 .nav>ul>li:hover:nth-child(5) .sub{
     display:flex;
-    /* justify-content: space-between; */
 }
 .nav>ul>li:hover:nth-child(9) .sub{
     display:block;
@@ -110,10 +101,6 @@ header{
 
 .door{
     padding: 100px 0;
-}
-.door>.top{
-    /* display:flex;
-    justify-content: space-around; */
 }
 .door>.top>h1{
     text-align: center;
@@ -140,9 +127,6 @@ header{
 .dWrap>li>a>img:hover{
     opacity:0.7;
 }
-/* .dWrap>li>a>img:hover .best{
-    opacity: 1;
-} */
 .dWrap>li>a>.best{
     position:absolute;
     top:40px;
@@ -204,13 +188,6 @@ footer{
     font-size:18px;
     overflow:hidden ;
 }
-.para{
-    /* background:black;
-    color:#aaa;
-    height:45vh;
-    font-size:18px;
-     */
-}
 footer>.para{
     display: flex;
     justify-content: space-between;
@@ -265,7 +242,7 @@ footer .footLogo>img{
     margin-top:200px;
 }
     header,.mainBanner,#container, .placeholder {
-    position: relative; /* crucial for z-index to work */
+    position: relative;
   }
   
   .mainBanner,#container { 
@@ -279,7 +256,7 @@ footer .footLogo>img{
   
   .placeholder {
     z-index: 1;
-    height: 45vh; /* same as footer height */
+    height: 45vh;
   }
   
   footer {
@@ -323,9 +300,6 @@ footer .footLogo>img{
     .dWrap{
         justify-content:space-evenly;
     }
-    .dWrap>li:last-child{
-        /* transform:translateX(-60%); */
-    }
     .door>.top>p{
         margin-right:10px;
     }
@@ -356,9 +330,6 @@ footer>.para>div{
     body,.nav>ul>li>.sub{
         font-size:12px;
     }
-    .dWrap>li>a>img{
-        /* width:280px; */
-    }
     .nav>ul>li:nth-child(12)>.sub>.leftsub{
         transform:translateX(0);
     }
@@ -367,6 +338,9 @@ footer>.para>div{
     }
     .dWrap>li{
         width:calc(100%/3);
+    }
+    .dWrap>li:last-child{
+        display:none;
     }
     footer>.para>div{
         margin:20px 20px;
@@ -499,24 +473,13 @@ footer>.para>div{
     header>.innerBox{
         margin-top:20px;
     }
-
-
-    /* .nav>ul>li:first-child{
-        margin-top:0;
-    } */
-    
   
     .dWrap>li>a>img{
-        /* width:210px; */
         width:100%;
     }
     .dWrap>li{
         width:40%;
         padding:40px 0;
-        /* margin:30px 10px; */
-    }
-    .dWrap>li:last-child{
-        /* transform:translateX(-55%); */
     }
 }
 @media screen and (max-width:360px){
@@ -532,18 +495,9 @@ footer>.para>div{
     .door>.top>p{
         font-size:12px;
     }
-    .dWrap>li>a>img{
-        /* width:150px; */
-    }
-    .dWrap>li:last-child{
-        /* transform:translateX(-57%); */
-    }
     footer{
         width:100%;
     }
-    /* .footLeft{
-        transform: translateX(20%);
-    } */
     .copy{
         left:50%;
         transform: translateX(-50%);
