@@ -1,0 +1,710 @@
+.innerBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#container {
+  height: 100%;
+  background: white;
+}
+
+body {
+  font-family: "Nanum squre";
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.ham {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.x {
+  display: none;
+}
+
+header {
+  z-index: 11;
+}
+header .innerBox {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .innerBox .nav {
+  margin-top: 10px;
+}
+header .innerBox .nav .mMenu {
+  display: flex;
+}
+header .innerBox .nav ul li {
+  margin: 0 50px;
+  height: 50px;
+}
+header .innerBox .nav ul li .sub {
+  position: absolute;
+  display: none;
+  justify-content: space-evenly;
+  width: 60vw;
+  height: 40vh;
+  background: white;
+  border: 1px solid #eee;
+  border-top: none;
+  top: 60px;
+  padding: 0 0px;
+  left: 0px;
+  font-size: 14px;
+  z-index: 20;
+  width: 100%;
+}
+header .innerBox .nav ul li .sub ul {
+  margin: 0 auto;
+}
+header .innerBox .nav ul li .sub li {
+  margin: 10px 0;
+}
+header .innerBox .nav ul li:hover:first-child .sub {
+  display: flex;
+}
+header .innerBox .nav ul li:hover:nth-child(5) .sub {
+  display: flex;
+}
+header .innerBox .nav ul li:hover:nth-child(9) .sub {
+  display: block;
+}
+header .innerBox .nav ul li:first-child .sub {
+  display: none;
+}
+header .innerBox .nav ul li:nth-child(5) .sub {
+  display: none;
+}
+header .innerBox .nav ul li:nth-child(9) .sub {
+  display: none;
+}
+header .innerBox .nav ul li:nth-child(9) .sub li {
+  padding-left: 57%;
+  z-index: 11;
+}
+header .innerBox .nav ul li:nth-child(9) .sub .leftsub {
+  float: left;
+  padding: 0 10%;
+  margin-top: 20px;
+  height: 35vh;
+  opacity: 1;
+}
+header .innerBox .nav ul li:nth-child(9) .sub .leftsub img {
+  width: 100%;
+}
+
+.rightGnb {
+  margin-top: 10px;
+}
+.rightGnb ul {
+  display: flex;
+}
+.rightGnb ul li {
+  margin: 0 10px;
+}
+.rightGnb ul li img {
+  width: 20px;
+}
+
+.mainBanner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+}
+.mainBanner .banner {
+  height: 100%;
+}
+.mainBanner .banner li {
+  position: absolute;
+  max-width: 1920px;
+}
+.mainBanner .banner li:first-child {
+  z-index: 1;
+}
+.mainBanner .banner li img {
+  height: 100%;
+  z-index: 11;
+}
+
+#container .innerBox div {
+  padding-top: 40px;
+}
+#container .innerBox .slide {
+  overflow: hidden;
+  max-width: 1920px;
+}
+#container .innerBox .slide h1 {
+  margin-top: 25px;
+}
+#container .innerBox .slide p {
+  text-align: right;
+  margin: 70px 0;
+  font-size: 18px;
+  font-weight: lighter;
+}
+#container .innerBox .slide .slideBanner {
+  margin-top: 30px;
+  width: 267%;
+  display: flex;
+  justify-content: space-between;
+}
+#container .innerBox .slide .slideBanner .banner1 {
+  padding: 0 10px;
+}
+#container .innerBox .slide .slideBanner li {
+  width: 33.3333333333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#container .innerBox .slide .slideBanner li .textBox {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#container .innerBox .slide .slideBanner li a img {
+  width: 100%;
+  border-radius: 10px;
+}
+#container .innerBox .storyWrap {
+  max-width: 1920px;
+}
+#container .innerBox .storyWrap .story {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#container .innerBox .storyWrap .story li {
+  padding: 0 55px;
+  height: 40vh;
+  width: 25%;
+  text-align: center;
+}
+#container .innerBox .storyWrap .story li a div {
+  word-break: keep-all;
+}
+#container .innerBox .storyWrap .story li a img {
+  width: 150%;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#container .innerBox .storyWrap .story li a img:hover {
+  opacity: 0.6;
+}
+#container .innerBox .storyWrap .story li a img:hover .story li a .textBox {
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+#container .innerBox .storyWrap .story li a img:hover .story li a .textBox h2 {
+  margin: 0;
+}
+#container .innerBox .storyWrap .story li a .textBox {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+#container .innerBox .storyWrap .story li a .textBox h2 {
+  margin-bottom: 40px;
+}
+#container .innerBox .storyWrap .story li:nth-child(2), #container .innerBox .storyWrap .story li:last-child {
+  margin-top: 380px;
+}
+#container .innerBox .rollBanner {
+  max-width: 1920px;
+  padding-top: 350px;
+}
+#container .innerBox .rollBanner .media, #container .innerBox .rollBanner .guide {
+  max-width: 1920px;
+  position: relative;
+  overflow: hidden;
+}
+#container .innerBox .rollBanner .media .mWrap, #container .innerBox .rollBanner .media .gWrap, #container .innerBox .rollBanner .guide .mWrap, #container .innerBox .rollBanner .guide .gWrap {
+  margin-top: 50px;
+  display: flex;
+  width: 300%;
+}
+#container .innerBox .rollBanner .media .mWrap li, #container .innerBox .rollBanner .media .gWrap li, #container .innerBox .rollBanner .guide .mWrap li, #container .innerBox .rollBanner .guide .gWrap li {
+  width: 33.3333333333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#container .innerBox .rollBanner .media .mWrap li a img, #container .innerBox .rollBanner .media .gWrap li a img, #container .innerBox .rollBanner .guide .mWrap li a img, #container .innerBox .rollBanner .guide .gWrap li a img {
+  width: 100%;
+}
+#container .innerBox .rollBanner .media .mWrap li a .textBox, #container .innerBox .rollBanner .media .gWrap li a .textBox, #container .innerBox .rollBanner .guide .mWrap li a .textBox, #container .innerBox .rollBanner .guide .gWrap li a .textBox {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700px;
+}
+
+.mediaBtn ul, .guideBtn ul {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.mediaBtn ul li, .guideBtn ul li {
+  padding: 0 10px;
+}
+.mediaBtn ul li a img, .guideBtn ul li a img {
+  height: 55%;
+}
+
+.booth {
+  max-width: 1920px;
+  padding: 80px 0;
+}
+.booth div {
+  padding-top: 80px;
+}
+.booth #daumRoughmapContainer1659338195079 {
+  width: 100%;
+}
+.booth .textBox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.booth .textBox p:first-child {
+  font-size: 18px;
+}
+.booth .textBox p .bold {
+  font-size: 18px;
+}
+.booth .textBox .naverWrap a {
+  display: block;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background: #2db400;
+  border-radius: 7px;
+}
+.booth .textBox .naverWrap a .naver {
+  font-size: 20px;
+  font-weight: 40px;
+  line-height: 40px;
+}
+
+header, .mainBanner, #container, .placeholder {
+  position: relative;
+}
+
+.mainBanner, #container {
+  z-index: 10;
+  overflow: hidden;
+}
+
+.placeholder {
+  z-index: 1;
+  height: 45vh;
+}
+
+footer {
+  background: black;
+  color: #aaa;
+  height: 45vh;
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  height: 45vh;
+}
+footer .para {
+  display: flex;
+  justify-content: space-between;
+}
+footer .para div {
+  margin: 40px 100px;
+}
+footer .para .footLeft .footLeftbot {
+  margin-top: 50px;
+}
+footer .para .footLeft .footLeftbot p {
+  margin: 25px 0;
+}
+footer .para .footLeft .footLeftbot p:nth-child(2) {
+  margin-left: 40px;
+}
+footer .para .footLeft .footLeftbot p a {
+  color: #aaa;
+}
+footer .para .footLeft address {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 50px;
+}
+footer .para .footLeft address p {
+  margin: 10px 0;
+}
+footer .para .footLeft address p .bold {
+  color: white;
+}
+footer .para .footRight {
+  padding-right: 200px;
+  padding-top: 100px;
+}
+footer .para .footRight ul {
+  display: flex;
+  justify-content: center;
+}
+footer .para .footRight ul li {
+  margin: 0 15px;
+}
+footer .para .footRight ul li a img {
+  width: 25px;
+}
+footer .copy {
+  font-size: 14px;
+  margin-top: 200px;
+}
+footer .footLogo img {
+  width: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  h1, .logo {
+    margin-left: 10px;
+  }
+  .mainBanner {
+    height: 50vw;
+  }
+  .mainBanner .banner li img {
+    width: 100%;
+    height: auto;
+  }
+  #container .innerBox .slide p {
+    margin-right: 20px;
+  }
+  #container .innerBox .storyWrap .story li {
+    margin: 0;
+  }
+  .booth .textBox {
+    padding: 50px 10px;
+  }
+  .booth .textBox p:first-child {
+    line-height: 40px;
+  }
+  footer {
+    position: static;
+    font-size: 16px;
+    height: 30vh;
+  }
+  footer .para div {
+    margin: 20px 50px;
+  }
+  footer .para .footLeft .footLeftbot {
+    display: none;
+  }
+  footer .para .footRight {
+    padding-right: 0;
+    padding-top: 50px;
+  }
+  footer .copy {
+    margin-top: 150px;
+  }
+  .placeholder {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .innerBox .nav ul li:nth-child(9) .sub li {
+    padding-left: 75%;
+  }
+  header .innerBox .nav ul li .sub {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+  }
+  body {
+    font-size: 12px;
+  }
+  header .innerBox .nav ul li .sub {
+    font-size: 12px;
+  }
+  #container .innerBox div {
+    padding: 0;
+  }
+  #container .innerBox .slide {
+    margin-top: 50px;
+  }
+  #container .innerBox .storyWrap {
+    margin-top: 50px;
+  }
+  #container .innerBox .storyWrap h1 {
+    margin: 50px 10px;
+  }
+  #container .innerBox .storyWrap .story li {
+    width: 45%;
+    padding: 0;
+  }
+  #container .innerBox .storyWrap .story li a img {
+    width: 100%;
+  }
+  #container .innerBox .storyWrap .story li a .textBox {
+    font-size: 12px;
+    width: 100%;
+  }
+  #container .innerBox .storyWrap .story li:nth-child(2), #container .innerBox .storyWrap .story li:last-child {
+    margin-top: 0;
+  }
+  #container .innerBox .storyWrap .story li:nth-child(3), #container .innerBox .storyWrap .story li:last-child {
+    padding-top: 30%;
+  }
+  #container .innerBox .rollBanner {
+    padding-top: 30%;
+  }
+  .booth h1 {
+    margin: 100px 10px;
+  }
+  .booth .textBox {
+    margin: 40px 0;
+  }
+  .booth .textBox p:first-child {
+    font-size: 14px;
+  }
+  .booth .textBox .naverWrap a {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    line-height: 0;
+  }
+  .booth .textBox .naverWrap a .naver {
+    font-size: 18px;
+  }
+  footer .para div {
+    margin: 50px 30px;
+  }
+  footer .para .footLeft .footLeftbot {
+    margin-top: 0;
+  }
+  footer .para .footLeft address {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ham {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+  }
+  .none {
+    display: block;
+  }
+  .x {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 2;
+    width: 22px;
+  }
+  .logo {
+    transform: translateX(15%);
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  header .innerBox .nav {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  header .innerBox .nav .mMenu {
+    display: block;
+  }
+  header .innerBox .nav ul {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+  }
+  header .innerBox .nav ul .dot {
+    border-top: 1px dotted #aaa;
+    border-bottom: 1px dotted #aaa;
+    line-height: 45px;
+  }
+  header .innerBox .nav ul .dot:first-child {
+    border-top: none;
+  }
+  header .innerBox .nav ul li {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5% auto;
+    line-height: 40px;
+    width: 100%;
+  }
+  header .innerBox .nav ul li:first-child {
+    margin-top: 0;
+  }
+  header .innerBox .nav ul li:hover:first-child .sub {
+    display: none;
+  }
+  header .innerBox .nav ul li:hover:nth-child(5) .sub {
+    display: none;
+  }
+  header .innerBox .nav ul li:hover:nth-child(9) .sub {
+    display: none;
+  }
+  #container .innerBox .storyWrap .story li a .textBox h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 545px) {
+  footer .copy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+  footer .para {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  footer .para div {
+    margin: 50px 0;
+  }
+  footer .para .footLeft .footLeftbot {
+    display: none;
+  }
+  footer .para .footLeft address {
+    font-size: 12px;
+  }
+  footer .para .footRight .sns li {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .innerBox {
+    margin-top: 20px;
+  }
+  #container .innerBox .rollBanner .media {
+    position: relative;
+  }
+}
+@media screen and (max-width: 460px) {
+  .booth .textBox .naverWrap {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #container .innerBox .storyWrap .story li:nth-child(3), #container .innerBox .storyWrap .story li:last-child {
+    padding-top: 18%;
+  }
+  .booth {
+    margin-top: 30%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .logo a img {
+    width: 120px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  #container .innerBox .rollBanner {
+    height: 55vh;
+  }
+  #container .innerBox .rollBanner div {
+    height: 65vw;
+    padding-top: 0;
+  }
+  #container .innerBox .rollBanner .media {
+    padding-top: 50px;
+    position: relative;
+  }
+  #container .innerBox .rollBanner .media .mWrap li a .textBox {
+    font-size: 11px;
+  }
+  #container .innerBox .rollBanner .media .mediaBtn {
+    top: 20%;
+    position: absolute;
+    right: 0;
+  }
+  #container .innerBox .rollBanner .media .mediaBtn li {
+    width: 12px;
+    height: 60px;
+  }
+  #container .innerBox .rollBanner .guide {
+    padding-top: 50px;
+    position: relative;
+  }
+  #container .innerBox .rollBanner .guide .gWrap li a .textBox {
+    font-size: 11px;
+  }
+  #container .innerBox .rollBanner .guide .guideBtn {
+    top: 20%;
+    position: absolute;
+    right: 0;
+  }
+  #container .innerBox .rollBanner .guide .guideBtn li {
+    width: 12px;
+    height: 60px;
+  }
+  #container .innerBox .storyWrap .story li {
+    height: 35vh;
+    word-break: keep-all;
+  }
+  #container .innerBox .storyWrap .story li a .textBox {
+    font-size: 10px;
+  }
+  #container .innerBox .slide p {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  #container .innerBox .slide .slideBanner {
+    width: 400%;
+  }
+  #container .innerBox .slide .slideBanner li .textBox {
+    font-size: 12px;
+  }
+  .booth .textBox p:first-child {
+    font-size: 12px;
+  }
+  .booth .textBox p .bold {
+    font-size: 16px;
+  }
+  .booth .textBox .naverWrap {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
